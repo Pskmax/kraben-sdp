@@ -3,6 +3,7 @@ import '../styles/Home.css'
 import bg from '../images/BG.jpg'
 import Data from '../helpers/Data';
 import StringrayInfo from '../components/StringrayInfo';
+import SearchBootstrap from '../styles/SearchBarBootstrap';
 
 function Home() {
     return (
@@ -12,6 +13,7 @@ function Home() {
                     <h1 className='homeTitle'>
                         Kraben Sell<br /><br />
                     </h1>
+                    <SearchBootstrap/><br />
                     <div className='krabenList'>
                         {Data.krabenList.map((stringray, key) => {
                             return (    
