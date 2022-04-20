@@ -9,8 +9,7 @@ function Profile() {
             <div>
                 <div>
                     <div className='profileImg'>
-                        <img style={{ width: "160px", height: "160px", borderRadius: "80px", backgroundImage: `url(${defaultProfile})` }}
-                        />
+                        <img style={{backgroundImage: `url(${defaultProfile})` }}/>
                     </div>
                     <div>
                         <h4>
