@@ -1,3 +1,10 @@
+.webName {
+    margin-top: 10px;
+    margin-left: 40px;
+    font-family: cursive;
+    color: white;
+}
+
 .navbar {
     width: 100%;
     height: 100%;
@@ -24,6 +31,7 @@
     display: flex;
     align-items: center;
     justify-content: right;
+    font-family: cursive;
 }
 
 .navbar a {
@@ -33,7 +41,7 @@
 }
 
 .navbar .rightSide button{
-    background-color: transparent;
+    background-color:transparent;
     border: none;
     color: white;
     cursor: pointer;

@@ -1,4 +1,11 @@
-.kraben {
+.homeBg {
+    width: 100%;
+    height: auto;
+    background-attachment: fixed;
+}
+
+/*
+.homeBg .kraben {
     color: rgb(0, 0, 0);
     text-decoration: none;
     margin-left: 170px;
@@ -7,7 +14,91 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-.homeBg {
+.homeBg .info{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+*/
+
+.home {
     width: 100%;
-    height: 90vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home .homeTitle {
+    font-family: cursive;
+    font-size: 60px;
+    margin-top: 80px;
+}
+
+.krabenList {
+    width: 70vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+/* MENU ITEM STYLING */
+
+.krabenInfo {
+    border-radius: 15px;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.krabenInfo:hover {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.krabenInfo div {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.krabenInfo h1,
+.krabenInfo p {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.krabenInfo .button {
+    font-size: 18px;
+    font-family: cursive;
+    color: black;
+    margin-left: 200px;
+    background-color: aliceblue;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.krabenInfo .button:hover {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1300px) {
+    .krabenList {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .krabenList {
+        grid-template-columns: 1fr;
+    }
 }

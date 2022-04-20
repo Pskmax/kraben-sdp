@@ -8,19 +8,18 @@ function Home() {
     return (
         <div className='homeBg' style={{ backgroundImage: `url(${bg})` }}>
             <div>
-                <div className='headerContainer'>
-                    <h1 className='kraben'>
-                        Kraben<br />
-                        Sell<br /><br />
+                <div className='home'>
+                    <h1 className='homeTitle'>
+                        Kraben Sell<br /><br />
                     </h1>
-                    <div className='KrabenList'>
+                    <div className='krabenList'>
                         {StringrayList.map((stringray, key) => {
                             return (
                                 <StringrayInfo
                                     key={key}
                                     image={stringray.image}
                                     name={stringray.name}
-                                    price={stringray.price}
+                                    price={'Price(Baht) : '+stringray.price}
                                 />
                             )
                         })}

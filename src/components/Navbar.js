@@ -5,7 +5,7 @@ import '../styles/Navbar.css'
 function Navbar() {
   return (
     <div className='navbar'>
-        
+      <h1 className='webName'>Kraben Website</h1>    
         <div className='rightSide'>
             <Link to="/"> Home </Link>
             <Link to="/register"> Sign Up </Link>

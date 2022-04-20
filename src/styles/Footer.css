@@ -8,3 +8,8 @@
     flex-direction: column;
     padding-top: 10px;
 }
+
+.footer .word {
+    font-size: 35px;
+    color: chartreuse;
+}

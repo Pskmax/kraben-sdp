@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import '../styles/Register.css'
 import bg from '../images/BG.jpg'
 import SignUpBootstrap from '../styles/SignUpBootstrap';
