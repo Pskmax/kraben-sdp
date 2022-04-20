@@ -6,17 +6,8 @@ import defaultProfile from '../images/defaultProfile.jpg'
 function Profile() {
     return (
         <div className='profileBg' style={{ backgroundImage: `url(${bg})` }}>
-            <div>
-                <div>
-                    <div className='profileImg'>
-                        <img style={{backgroundImage: `url(${defaultProfile})` }}/>
-                    </div>
-                    <div>
-                        <h4>
-
-                        </h4>
-                    </div>
-                </div>
+            <div className='profileImg'>
+                <img style={{ backgroundImage: `url(${defaultProfile})` }} />
             </div>
         </div>
     );

@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/Home.css'
 import bg from '../images/BG.jpg'
-import { StringrayList } from '../helpers/StringrayList';
+import Data from '../helpers/Data';
 import StringrayInfo from '../components/StringrayInfo';
 
 function Home() {
@@ -13,7 +13,7 @@ function Home() {
                         Kraben Sell<br /><br />
                     </h1>
                     <div className='krabenList'>
-                        {StringrayList.map((stringray, key) => {
+                        {Data.krabenList.map((stringray, key) => {
                             return (
                                 <StringrayInfo
                                     key={key}
@@ -25,6 +25,7 @@ function Home() {
                         })}
                     </div>
                 </div>
+
             </div>
         </div>
     );

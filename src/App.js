@@ -6,8 +6,10 @@ import SignUp from './pages/SignUp';
 import Profile from './pages/Profile';
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Footer from './components/Footer';
+import Cart from './pages/Cart';
 
 function App() {
+
   return(
     <div className='App'>
       <Router>
@@ -17,6 +19,7 @@ function App() {
           <Route excat path='/login' element={<Login/>}></Route>
           <Route excat path='/register' element={<SignUp/>}></Route>
           <Route excat path='/profile' element={<Profile/>}></Route>
+          <Route excat path='/cart' element={<Cart/>}></Route>
         </Routes>
       </Router>
       <Footer/>
