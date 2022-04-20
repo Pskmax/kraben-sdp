@@ -14,7 +14,7 @@ function Home() {
                     </h1>
                     <div className='krabenList'>
                         {Data.krabenList.map((stringray, key) => {
-                            return (
+                            return (    
                                 <StringrayInfo
                                     key={key}
                                     image={stringray.image}
