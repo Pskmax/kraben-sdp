@@ -1,6 +1,6 @@
 import React from "react";
 
-function FormBootstrap() {
+function SignUpBootstrap() {
     return (
         <div className="mt-3 mx-auto p-3" style={{ background: "#cee", width: 700 }}>
             <form class="row g-3">
@@ -63,4 +63,4 @@ function FormBootstrap() {
     )
 }
 
-export default FormBootstrap
+export default SignUpBootstrap
