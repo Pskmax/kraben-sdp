@@ -7,6 +7,11 @@ function Login() {
 
     return (
         <div className='loginBg' style={{ backgroundImage: `url(${bg})` }}>
+            <h1 className='header'>
+                <br/>
+                Login
+                <br/>
+            </h1>
             <LoginBootstrap />
         </div>
     );

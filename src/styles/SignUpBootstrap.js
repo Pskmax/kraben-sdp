@@ -31,6 +31,8 @@ function SignUpBootstrap() {
                         <option>จังหวัด A</option>
                         <option>จังหวัด B</option>
                         <option>จังหวัด C</option>
+                        <option>จังหวัด D</option>
+                        <option>จังหวัด กูเก่ง</option>
                     </select>
                 </div>
                 <div class="col-md-2">

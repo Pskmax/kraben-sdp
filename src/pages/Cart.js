@@ -1,10 +1,12 @@
 import React from 'react'
-import '../styles/Profile.css'
+import '../styles/Cart.css'
 import bg from '../images/BG.jpg'
+import StringrayInfo from '../components/StringrayInfo';
 
 function Cart() {
     return (
-        <div className='profileBg' style={{ backgroundImage: `url(${bg})` }}>
+        <div className='cartBg' style={{ backgroundImage: `url(${bg})` }}>
+            <StringrayInfo/>
         </div>
     );
 }

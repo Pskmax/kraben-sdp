@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/Navbar.css'
 
-function Navbar() {
+function NavbarLoggedIn() {
   return (
     <div className='navbar'>
       <h1 className='webName'>Kraben Website</h1>
@@ -10,6 +10,7 @@ function Navbar() {
         <Link to="/"> Home </Link>
         <Link to="/register"> Sign Up </Link>
         <Link to="/login"> Login </Link>
+        <Link to="/profile"> Profile </Link>
         <Link to="/cart">
           <div className='cart'>
             <span>
@@ -23,4 +24,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default NavbarLoggedIn

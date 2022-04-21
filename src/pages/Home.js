@@ -1,34 +1,19 @@
 import React from 'react'
-import '../styles/Home.css'
 import bg from '../images/BG.jpg'
-import Data from '../helpers/Data';
-import StringrayInfo from '../components/StringrayInfo';
-import SearchBootstrap from '../styles/SearchBarBootstrap';
+import '../styles/Home.css'
+import { Link } from 'react-router-dom';
 
 function Home() {
     return (
         <div className='homeBg' style={{ backgroundImage: `url(${bg})` }}>
-            <div>
-                <div className='home'>
-                    <h1 className='homeTitle'>
-                        Kraben Sell<br /><br />
-                    </h1>
-                    <SearchBootstrap/><br />
-                    <div className='krabenList'>
-                        {Data.krabenList.map((stringray, key) => {
-                            return (    
-                                <StringrayInfo
-                                    key={key}
-                                    image={stringray.image}
-                                    name={stringray.name}
-                                    price={'Price(Baht) : '+stringray.price}
-                                />
-                            )
-                        })}
-                    </div>
-                </div>
-
-            </div>
+            <h1 className='header'>
+                <br />
+                Home
+                <br /><br />
+            </h1>
+                <Link to='/sell'><button className='sellButton'> Kraben Sell </button></Link><br />
+                <Link to='/bid'><button className='bidButton'> Kraben Bid </button></Link><br />
+                <Link to='/contest'><button className='contestButton'> Kraben Contest </button></Link><br />
         </div>
     );
 }
