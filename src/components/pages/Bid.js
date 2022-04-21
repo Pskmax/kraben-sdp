@@ -1,6 +1,6 @@
 import React from 'react'
-import '../styles/Bid.css'
-import bg from '../images/BG.jpg'
+import '../../styles/Bid.css'
+import bg from '../../images/BG.jpg'
 
 function Bid() {
     return (

@@ -1,9 +1,9 @@
 import React from 'react'
-import '../styles/Sell.css'
-import bg from '../images/BG.jpg'
-import Data from '../helpers/Data';
-import StringrayInfo from '../components/StringrayInfo';
-import SearchBootstrap from '../styles/SearchBarBootstrap';
+import '../../styles/Sell.css'
+import bg from '../../images/BG.jpg'
+import Data from '../../helpers/Data';
+import StringrayInfo from '../StringrayInfo';
+import SearchBootstrap from '../../styles/SearchBarBootstrap';
 
 function Sell() {
     return (

@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/Navbar.css'
 
 function Navbar() {
+
   return (
     <div className='navbar'>
       <h1 className='webName'>Kraben Website</h1>
@@ -19,7 +20,7 @@ function Navbar() {
           </div>
         </Link>
       </div>
-    </div>
+    </div >
   )
 }
 

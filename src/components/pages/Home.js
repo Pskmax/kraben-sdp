@@ -1,6 +1,6 @@
 import React from 'react'
-import bg from '../images/BG.jpg'
-import '../styles/Home.css'
+import bg from '../../images/BG.jpg'
+import '../../styles/Home.css'
 import { Link } from 'react-router-dom';
 
 function Home() {
@@ -8,7 +8,7 @@ function Home() {
         <div className='homeBg' style={{ backgroundImage: `url(${bg})` }}>
             <h1 className='header'>
                 <br />
-                Home
+                Kraben Website
                 <br /><br />
             </h1>
                 <Link to='/sell'><button className='sellButton'> Kraben Sell </button></Link><br />
