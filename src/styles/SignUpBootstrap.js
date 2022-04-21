@@ -2,7 +2,7 @@ import React from "react";
 
 function SignUpBootstrap() {
     return (
-        <div className="mt-3 mx-auto p-3" style={{ background: "#cee", width: 700 }}>
+        <div className="mt-5 mx-auto p-3" style={{ background: "#cee", width: 700 }}>
             <form class="row g-3">
                 <div class="col-12">
                     <label for="inputUsername" class="form-label">Username</label>
