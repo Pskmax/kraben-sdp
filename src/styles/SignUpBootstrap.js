@@ -21,18 +21,17 @@ function SignUpBootstrap() {
                     <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" />
                 </div>
                 <div class="col-md-6">
-                    <label for="inputCity" class="form-label">Province</label>
+                    <label for="inputCity" class="form-label">District</label>
                     <input type="text" class="form-control" id="inputCity" />
                 </div>
                 <div class="col-md-4">
-                    <label for="inputState" class="form-label">District</label>
+                    <label for="inputState" class="form-label">Province</label>
                     <select id="inputState" class="form-select">
                         <option selected>Choose...</option>
-                        <option>จังหวัด A</option>
-                        <option>จังหวัด B</option>
-                        <option>จังหวัด C</option>
-                        <option>จังหวัด D</option>
-                        <option>จังหวัด กูเก่ง</option>
+                        <option>กรุงเทพมหานครฯ</option>
+                        <option>จังหวัด ก</option>
+                        <option>จังหวัด ข</option>
+                        <option>จังหวัด ค</option>
                     </select>
                 </div>
                 <div class="col-md-2">
