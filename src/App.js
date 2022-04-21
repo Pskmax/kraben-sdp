@@ -13,7 +13,6 @@ import Bid from './pages/Bid';
 import Contest from './pages/Contest';
 
 function App() {
-
   return(
     <div className='App'>
       <Router>
