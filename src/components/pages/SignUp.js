@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import '../../styles/SignUp.css'
 import bg from '../../images/BG.jpg'
 import {UserAuth} from '../AuthContext'
-import { useNavigate } from 'react-router-dom'
+import { Link,useNavigate } from 'react-router-dom'
 
 const SignUp = () => {
     
@@ -32,7 +32,7 @@ const SignUp = () => {
                 Sign Up
                 <br />
             </h1>
-                <div className="mt-5 mx-auto p-3" style={{ background: "#cee", width: 700 }}>
+                <div className="mt-5 mx-auto p-3" style={{ background: "#cee", width: 700 ,minHeight:'515px'}}>
                     <form class="row g-3" onSubmit={handleSubmit}>
                         <div class="col-12">
                             <label for="inputUsername" class="form-label">Username</label>
@@ -90,6 +90,9 @@ const SignUp = () => {
                             <button type="submit" class="btn btn-primary">Sign Up</button>
                         </div>
                     </form>
+                    <div className='signin'>
+                    <div>Already have account? <Link to ="../login">Signin</Link></div>
+                </div>
                 </div>
         </div>
     );

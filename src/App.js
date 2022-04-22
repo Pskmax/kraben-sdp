@@ -30,11 +30,10 @@ function App() {
             <Route excat path='/register' element={<SignUp />}></Route>
             <Route excat path='/cart' element={<Cart />}></Route>
             <Route excat path='/dashboard' element={<Dashboard />}></Route>
-            
             <Route excat path='/profile' element={
-            <ProtectedRoute>
-              <Profile />
-            </ProtectedRoute>
+              <ProtectedRoute>
+                <Profile />
+              </ProtectedRoute>
             }></Route>
           </Routes>
         </AuthContextProvider>
