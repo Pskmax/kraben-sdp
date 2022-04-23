@@ -27,12 +27,12 @@ const Profile = () => {
             </h1>
             <div className='profile'>
                 <br/>
-                <p>Firstname : </p>
-                <p>Lastname : </p>
-                <p>Email : {user && user.email}</p> 
-                <p>Address : </p>
-                <p>Accout Type : </p>
-                <button onClick={handleLogout} className='boarder px-6 py-2 my-4'>Log Out</button>
+                <p className='mt-4'>Firstname : Ann</p>
+                <p className='mt-4'>Lastname : Takamaki</p>
+                <p className='mt-4'> Email : {user && user.email}</p> 
+                <p className='mt-4'>Address : Cecilia Chapman 711-2880 Nulla St.Mankato Mississippi 96522</p>
+                <p className='mt-4'>Accout Type : Buyer</p>
+                <button onClick={handleLogout} className='btn btn-danger boarder py-2 my-4'>Log Out</button>
             </div>
         </div>
     );
