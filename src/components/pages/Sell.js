@@ -2,7 +2,7 @@ import React from 'react'
 import '../../styles/Sell.css'
 import bg from '../../images/BG.jpg'
 import Data from '../../helpers/Data';
-import StringrayInfo from '../StringrayInfo';
+import StingrayInfo from '../StingrayInfo';
 import SearchBootstrap from '../../styles/SearchBarBootstrap';
 
 function Sell() {
@@ -17,13 +17,13 @@ function Sell() {
                     </h1>
                     <SearchBootstrap/><br />
                     <div className='krabenList'>
-                        {Data.krabenList.map((stringray, key) => {
+                        {Data.krabenList.map((stingray, key) => {
                             return (    
-                                <StringrayInfo
+                                <StingrayInfo
                                     key={key}
-                                    image={stringray.image}
-                                    name={stringray.name}
-                                    price={'Price(Baht) : '+stringray.price}
+                                    image={stingray.image}
+                                    name={stingray.name}
+                                    price={'Price(Baht) : '+ stingray.price}
                                 />
                             )
                         })}

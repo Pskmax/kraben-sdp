@@ -1,7 +1,7 @@
 import React from 'react'
 import { useCart } from 'react-use-cart';
 
-function StringrayInfo({ image, name, price }, props) {
+function StingrayInfo({ image, name, price }, props) {
   const { addItem } = useCart();
 
   return (
@@ -16,4 +16,4 @@ function StringrayInfo({ image, name, price }, props) {
   )
 }
 
-export default StringrayInfo;
+export default StingrayInfo;

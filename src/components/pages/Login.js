@@ -11,13 +11,13 @@ const Login = () => {
     const [error, setError] = useState('')
     const navigate = useNavigate()
 
-    const {signIn} = UserAuth();
+    const { signIn } = UserAuth();
 
-    const handleSubmit = async(e) =>{
+    const handleSubmit = async (e) => {
         e.preventDefault();
         setError('')
         try {
-            await signIn(email,password)
+            await signIn(email, password)
             navigate('/profile')
             console.log('You are logged in')
         } catch (e) {
@@ -36,16 +36,19 @@ const Login = () => {
                 <form onSubmit={handleSubmit} class="row g-3">
                     <div class="col-12">
                         <label for="inputUsername" class="form-label">Username/Email</label>
-                        <input onChange={(e)=>setEmail(e.target.value)} type="text" class="form-control" id="inputUsername" />
+                        <input onChange={(e) => setEmail(e.target.value)} type="text" class="form-control" id="inputUsername" />
                     </div>
                     <div class="col-12">
                         <label for="inputPassword4" class="form-label">Password</label>
-                        <input onChange={(e)=>setPassword(e.target.value)} type="password" class="form-control" id="inputPassword4" />
+                        <input onChange={(e) => setPassword(e.target.value)} type="password" class="form-control" id="inputPassword4" />
                     </div>
                     <div class="col-12 d-flex justify-content-center">
                         <button type="submit" class="btn btn-primary">Login</button>
                     </div>
                 </form>
+                <div className='signup'>
+                    <div>Don't have account? <Link to ="../register">Sign Up</Link></div>
+                </div>
             </div>
         </div>
     );

@@ -1,5 +1,4 @@
 import './App.css';
-import NavbarLoggedIn from './components/NavbarLoggedIn';
 import Navbar from './components/Navbar';
 import Sell from './components/pages/Sell';
 import Login from './components/pages/Login';
@@ -11,7 +10,6 @@ import Cart from './components/pages/Cart';
 import Home from './components/pages/Home';
 import Bid from './components/pages/Bid';
 import Contest from './components/pages/Contest';
-import { Dashboard } from '@mui/icons-material';
 import { AuthContextProvider } from './components/AuthContext';
 import ProtectedRoute from './components/Protect';
 
@@ -19,7 +17,7 @@ function App() {
   return (
     <div className='App'>
       <Router>
-        <NavbarLoggedIn />
+        <Navbar />
         <AuthContextProvider>
           <Routes>
             <Route excat path='/' element={<Home />}></Route>
@@ -29,12 +27,10 @@ function App() {
             <Route excat path='/login' element={<Login />}></Route>
             <Route excat path='/register' element={<SignUp />}></Route>
             <Route excat path='/cart' element={<Cart />}></Route>
-            <Route excat path='/dashboard' element={<Dashboard />}></Route>
-            
             <Route excat path='/profile' element={
-            <ProtectedRoute>
-              <Profile />
-            </ProtectedRoute>
+              <ProtectedRoute>
+                <Profile />
+              </ProtectedRoute>
             }></Route>
           </Routes>
         </AuthContextProvider>
