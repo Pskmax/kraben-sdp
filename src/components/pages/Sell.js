@@ -18,7 +18,7 @@ function Sell() {
                         <br /><br />
                     </h1>
                     <div className='col-4'>
-                        <input onChange={(e) => setQuery(e.target.value)} type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" /><br />
+                        <input onChange={(e) => setQuery(e.target.value.toLowerCase())} type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" /><br />
                     </div>
                     <div className='krabenList'>
                         {Data.krabenList.filter(n => n.name.toLowerCase().includes(query)).map((stingray, key) => {
