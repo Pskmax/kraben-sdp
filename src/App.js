@@ -1,6 +1,5 @@
 import './App.css';
 import NavbarLoggedIn from './components/NavbarLoggedIn';
-import Navbar from './components/Navbar';
 import Sell from './components/pages/Sell';
 import Login from './components/pages/Login';
 import SignUp from './components/pages/SignUp';
