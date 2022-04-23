@@ -1,29 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../../styles/Sell.css'
 import bg from '../../images/BG.jpg'
 import Data from '../../helpers/Data';
 import StingrayInfo from '../StingrayInfo';
-import SearchBar from '../SearchBar';
 
 function Sell() {
+
+    const [query, setQuery] = useState('');
+
     return (
         <div className='sellBg' style={{ backgroundImage: `url(${bg})` }}>
             <div>
                 <div className='sell'>
                     <h1 className='sellTitle'>
-                        <br/>
+                        <br />
                         Kraben sell
                         <br /><br />
                     </h1>
-                    <SearchBar/><br />
+                    <div className='col-4'>
+                        <input onChange={(e) => setQuery(e.target.value)} type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" /><br />
+                    </div>
                     <div className='krabenList'>
-                        {Data.krabenList.map((stingray, key) => {
-                            return (    
+                        {Data.krabenList.filter(n => n.name.toLowerCase().includes(query)).map((stingray, key) => {
+                            return (
                                 <StingrayInfo
                                     key={key}
                                     image={stingray.image}
                                     name={stingray.name}
-                                    price={'Price(Baht) : '+ stingray.price}
+                                    price={'Price(Baht) : ' + stingray.price}
                                 />
                             )
                         })}

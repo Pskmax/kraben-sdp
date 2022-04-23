@@ -27,7 +27,8 @@ const Profile = () => {
             </h1>
             <div className='profile'>
                 <br/>
-                <p>Username : </p>
+                <p>Firstname : </p>
+                <p>Lastname : </p>
                 <p>Email : {user && user.email}</p> 
                 <p>Address : </p>
                 <p>Accout Type : </p>

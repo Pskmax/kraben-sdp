@@ -35,7 +35,7 @@ const Login = () => {
             <div className="mt-5 mx-auto p-3" style={{ background: "#cee", width: 700 }}>
                 <form onSubmit={handleSubmit} class="row g-3">
                     <div class="col-12">
-                        <label for="inputUsername" class="form-label">Username/Email</label>
+                        <label for="inputUsername" class="form-label">Email</label>
                         <input onChange={(e) => setEmail(e.target.value)} type="text" class="form-control" id="inputUsername" />
                     </div>
                     <div class="col-12">

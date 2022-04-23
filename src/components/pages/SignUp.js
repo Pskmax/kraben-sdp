@@ -34,8 +34,12 @@ const SignUp = () => {
             </h1>
                 <div className="mt-5 mx-auto p-3" style={{ background: "#cee", width: 700 ,minHeight:'515px'}}>
                     <form class="row g-3" onSubmit={handleSubmit}>
-                        <div class="col-12">
-                            <label for="inputUsername" class="form-label">Username</label>
+                        <div class="col-6">
+                            <label for="inputUsername" class="form-label">Firstname</label>
+                            <input type="text" class="form-control" id="inputUsername" />
+                        </div>
+                        <div class="col-6">
+                            <label for="inputUsername" class="form-label">Lastname</label>
                             <input type="text" class="form-control" id="inputUsername" />
                         </div>
                         <div class="col-md-6">
