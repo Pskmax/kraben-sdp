@@ -1,6 +1,6 @@
 import React from "react";
 
-function SearchBootstrap() {
+function SearchBar() {
     return (
         <div class="input-group w-50">
             <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
@@ -9,4 +9,4 @@ function SearchBootstrap() {
     )
 }
 
-export default SearchBootstrap
+export default SearchBar

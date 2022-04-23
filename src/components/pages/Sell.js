@@ -3,7 +3,7 @@ import '../../styles/Sell.css'
 import bg from '../../images/BG.jpg'
 import Data from '../../helpers/Data';
 import StingrayInfo from '../StingrayInfo';
-import SearchBootstrap from '../../styles/SearchBarBootstrap';
+import SearchBar from '../SearchBar';
 
 function Sell() {
     return (
@@ -15,7 +15,7 @@ function Sell() {
                         Kraben sell
                         <br /><br />
                     </h1>
-                    <SearchBootstrap/><br />
+                    <SearchBar/><br />
                     <div className='krabenList'>
                         {Data.krabenList.map((stingray, key) => {
                             return (    

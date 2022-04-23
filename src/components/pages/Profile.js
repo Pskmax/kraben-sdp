@@ -1,10 +1,8 @@
 import React from 'react'
 import '../../styles/Profile.css'
 import bg from '../../images/BG.jpg'
-import defaultProfile from '../../images/defaultProfile.jpg'
 import { UserAuth } from '../AuthContext'
-import { LogoutTwoTone } from '@mui/icons-material'
-import { Navigate, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const Profile = () => {
     const {user, logout} = UserAuth()
@@ -25,14 +23,16 @@ const Profile = () => {
             <h1 className='header'>
                 <br/>
                 Profile
+                <br/><br/>
             </h1>
             <div className='profile'>
-                <img src={defaultProfile} alt='' />
+                <br/>
+                <p>Username : </p>
                 <p>Email : {user && user.email}</p> 
-
+                <p>Address : </p>
+                <p>Accout Type : </p>
                 <button onClick={handleLogout} className='boarder px-6 py-2 my-4'>Log Out</button>
             </div>
-            
         </div>
     );
 }

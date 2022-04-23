@@ -1,5 +1,6 @@
 import React from 'react'
 import { useCart } from 'react-use-cart';
+import Data from '../helpers/Data';
 
 function StingrayInfo({ image, name, price }, props) {
   const { addItem } = useCart();
