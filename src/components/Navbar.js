@@ -5,8 +5,8 @@ import '../styles/Navbar.css'
 let user = false;
 
 function Navbar() {
-  
-  if(!user){
+
+  if (!user) {
     return (
       <div className='navbar'>
         <h1 className='webName'>Kraben Website</h1>
@@ -27,7 +27,7 @@ function Navbar() {
       </div>
     )
   }
-  else{
+  else {
     return (
       <div className='navbar'>
         <h1 className='webName'>Kraben Website</h1>
