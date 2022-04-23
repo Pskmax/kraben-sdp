@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../styles/Profile.css'
+import '../styles/Profile.css'
 import bg from '../../images/BG.jpg'
 import { UserAuth } from '../AuthContext'
 import { useNavigate } from 'react-router-dom'

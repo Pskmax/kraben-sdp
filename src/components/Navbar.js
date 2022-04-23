@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import '../styles/Navbar.css'
+import './styles/Navbar.css'
 
 let user = false;
 
 function Navbar() {
+
+  const count = [1,2,3]
 
   if (!user) {
     return (
@@ -18,9 +20,9 @@ function Navbar() {
           <Link to="/cart">
             <div className='cart'>
               <span>
-                <i className="bi bi-cart3" />
+                <i className="bi bi-cart3"/>
               </span>
-              <span>10</span>
+              <span>{count.length}</span>
             </div>
           </Link>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../styles/Bid.css'
+import '../styles/Bid.css'
 import bg from '../../images/BG.jpg'
 
 function Bid() {

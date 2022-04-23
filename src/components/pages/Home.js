@@ -1,6 +1,6 @@
 import React from 'react'
 import bg from '../../images/BG.jpg'
-import '../../styles/Home.css'
+import '../styles/Home.css'
 import { Link } from 'react-router-dom';
 
 function Home() {

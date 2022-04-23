@@ -1,9 +1,8 @@
-import React, { useContext, useState } from 'react'
-import '../../styles/Login.css'
+import React, { useState } from 'react'
+import '../styles/Login.css'
 import bg from '../../images/BG.jpg'
 import { Link, useNavigate } from 'react-router-dom'
 import { UserAuth } from '../AuthContext'
-import { async } from '@firebase/util'
 
 const Login = () => {
     const [email, setEmail] = useState('')

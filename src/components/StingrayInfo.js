@@ -1,9 +1,6 @@
 import React from 'react'
-import { useCart } from 'react-use-cart';
-import Data from '../helpers/Data';
 
-function StingrayInfo({ image, name, price }, props) {
-  const { addItem } = useCart();
+function StingrayInfo({ image, name, price, id, handleClick }) {
 
   return (
     <div className='krabenInfo'>
@@ -11,7 +8,7 @@ function StingrayInfo({ image, name, price }, props) {
       <h1> {name} </h1>
       <p> {price} </p>
       <div>
-        <button className='button' onClick={() => addItem(props.item)}>Add to Cart</button>
+        <button className='button' onClick={() => handleClick(id)}>Add to Cart</button>
       </div>
     </div>
   )

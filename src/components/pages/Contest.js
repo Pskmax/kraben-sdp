@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../styles/Contest.css'
+import '../styles/Contest.css'
 import bg from '../../images/BG.jpg'
 
 function Contest() {
