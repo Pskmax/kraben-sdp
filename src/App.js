@@ -26,7 +26,7 @@ function App() {
             <Route excat path='/Contest' element={<Contest />}></Route>
             <Route excat path='/login' element={<Login />}></Route>
             <Route excat path='/register' element={<SignUp />}></Route>
-            <Route excat path='/cart' element={<Cart />}></Route>
+            <Route excat path='/cart' element={<ProtectedRoute><Cart /></ProtectedRoute>}></Route>
             <Route excat path='/profile' element={
               <ProtectedRoute>
                 <Profile />
