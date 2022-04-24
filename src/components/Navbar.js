@@ -34,7 +34,6 @@ const Navbar = () => {
           <Link to="/"> Home </Link>
           <Link to="/register"> Sign Up </Link>
           <Link to="/login"> Login </Link>
-          <Link to="/profile"> Profile </Link>
           <Link to="/cart">
             <div className='cart'>
               <span>
