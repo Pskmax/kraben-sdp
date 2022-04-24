@@ -14,8 +14,8 @@
 .profile {
     align-items: center;
     justify-content: center;
-    width: 40%;
-    height: 50vh;
+    width: 60%;
+    height: 70vh;
     background-color:#cee;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     display: flex;
