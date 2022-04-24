@@ -14,12 +14,11 @@ import ProtectedRoute from './components/Protect';
 import Navbar from './components/Navbar'
 
 function App() {
-
   return (
     <div className='App'>
       <Router>
-        <Navbar/>
         <AuthContextProvider>
+          <Navbar/>
           <Routes>
             <Route excat path='/' element={<Home />}></Route>
             <Route excat path='/sell' element={<Sell />}></Route>

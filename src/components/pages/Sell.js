@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import '../styles/Sell.css'
 import bg from '../../images/BG.jpg'
 import Stingray from '../../helpers/Stingray';
+import Navbar from '../Navbar'
 
 function Sell() {
 

@@ -12,6 +12,10 @@ const Stingray = () => {
         console.log(cart)
     }
 
+    const countNumber = (cart) => {
+        return cart
+    }
+
     const handleChange = (item, d) => {
         const ind = cart.indexOf(item)
         const arr = cart
