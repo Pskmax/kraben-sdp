@@ -18,12 +18,24 @@ function App() {
     <div className='App'>
       <Router>
         <AuthContextProvider>
-          <Navbar/>
+          <Navbar />
           <Routes>
             <Route excat path='/' element={<Home />}></Route>
-            <Route excat path='/sell' element={<Sell />}></Route>
-            <Route excat path='/bid' element={<Bid />}></Route>
-            <Route excat path='/Contest' element={<Contest />}></Route>
+            <Route excat path='/sell' element={
+              <ProtectedRoute>
+                <Sell />
+              </ProtectedRoute>
+            }></Route>
+            <Route excat path='/bid' element={
+              <ProtectedRoute>
+                <Bid />
+              </ProtectedRoute>
+            }></Route>
+            <Route excat path='/Contest' element={
+              <ProtectedRoute>
+                <Contest />
+              </ProtectedRoute>
+            }></Route>
             <Route excat path='/login' element={<Login />}></Route>
             <Route excat path='/register' element={<SignUp />}></Route>
             <Route excat path='/cart' element={

@@ -6,7 +6,8 @@ import { UserAuth } from './AuthContext'
 
 const Navbar = () => {
   const count = countNumber
-  const {user} = UserAuth()
+  const { user } = UserAuth()
+
   if (user) {
     return (
       <div className='navbar'>
