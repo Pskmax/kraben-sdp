@@ -1,5 +1,5 @@
 import Data from './Data';
-import StingrayInfo from '../components/StingrayInfo';
+import Card from '../components/Card';
 import { useEffect, useState } from 'react';
 import '../components/styles/Stingray.css'
 
@@ -10,9 +10,6 @@ const Stingray = () => {
         if(cart.indexOf(item) !== -1 ) return;
         setCart([...cart, item])
         console.log(cart)
-    }
-
-    const countNumber = (cart) => {
         return cart
     }
 
@@ -39,7 +36,7 @@ const Stingray = () => {
 
                 {Data.krabenList.filter(n => n.name.toLowerCase().includes(query)).map((stingray, key) => {
                     return (
-                        <StingrayInfo
+                        <Card
                             key={key}
                             image={stingray.image}
                             name={stingray.name}

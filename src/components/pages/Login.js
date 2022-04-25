@@ -22,6 +22,7 @@ const Login = () => {
         } catch (e) {
             setError(e.message)
             console.log(e.message)
+            alert("Email or Password incorrect");
         }
     }
     return (

@@ -1,13 +1,14 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../styles/SignUp.css'
 import bg from '../../images/BG.jpg'
 import {UserAuth} from '../AuthContext'
 import { Link,useNavigate } from 'react-router-dom'
 
 const SignUp = () => {
-    
+
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const [accountType, setAccountType] = useState('')
     const [error, setError] = useState('')
 
     const {createUser} = UserAuth()
@@ -77,7 +78,7 @@ const SignUp = () => {
                             <div class="col-auto">
                                 <br />
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked />
+                                    <input onChange={(e) => setAccountType(e.target.value)} class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked />
                                     <label class="form-check-label" for="gridRadios1">
                                         Buyer
                                     </label>
